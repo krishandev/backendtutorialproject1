@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="flex flex-col bg-red-200 p-4 gap-4">
+        <form action="/create" method="post">
+        <div class="p-1"><input class="px-2" placeholder="type here" name="title"/></div>
+        <div class="p-1 "><input class="px-2" placeholder="Enter here text" name="details"/></div>
+        <button class="bg-blue-300 w-32">Submit</button>
+    </form>
+       
+        <div class="flex flex-wrap gap-3">
+            <% if(files.length>0){
+                %> <% files.forEach(function(val){%> 
+                    <div class="border-2 w-32 h-32 p-1"><h1 ><%=val%></h1> <a class="text-blue underline" href="/files/<%=val %>">Read More</a></div>
+            
+                    <%}) %>
+            <%} else{%> <h3>No Task Yet</h3><% }%>
+            
+        </div>
+        
+    </div>
+</body>
+</html>

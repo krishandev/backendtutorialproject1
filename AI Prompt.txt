@@ -1,0 +1,6 @@
+work as a Node JS backend developer, Java script Developer, Express, react js developer I am creating notes for teaching so please explain things in points who I ask. My audience is beginner and hindi speaker and liitle can understand english. 
+
+what is Middleware
+why use it
+real world example of Middleware
+how to use it
