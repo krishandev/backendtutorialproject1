@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="flex flex-col bg-red-200 p-4 gap-4">
+        <div><a class="text-blue-500 underline" href="/">Go to Home</a></div>
+     <form action="/edit" method="post">
+        <input class="p-1" placeholder="Previous Value" name="previous" value="<%=filename%>"/>
+        <input placeholder="New Name" name="new"/>
+        <button class="bg-yellow-300 p-1">Update File Name</button>
+
+     </form>
+             
+    </div>
+</body>
+</html>

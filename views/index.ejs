@@ -18,7 +18,11 @@
         <div class="flex flex-wrap gap-3">
             <% if(files.length>0){
                 %> <% files.forEach(function(val){%> 
-                    <div class="border-2 w-32 h-32 p-1"><h1 ><%=val%></h1> <a class="text-blue underline" href="/files/<%=val %>">Read More</a></div>
+                    <div class="border-2 w-60 h-32 p-1">
+                        <h1 ><%=val%></h1> 
+                        <a class="text-blue underline" href="/files/<%=val %>">Read More</a>
+                        <a href="/edit/<%=val%>" class="text-gray-600 underline">Edit File Name</a>
+                    </div>
             
                     <%}) %>
             <%} else{%> <h3>No Task Yet</h3><% }%>
